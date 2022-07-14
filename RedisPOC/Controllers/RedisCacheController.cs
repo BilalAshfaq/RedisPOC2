@@ -48,5 +48,11 @@ namespace RedisPOC.Controllers
             await _cacheService.SetMultipleValuesAsync(cacheRequest.KeyValuePairs);
             return Ok();
         }
+
+        [HttpPost("benchmark")]
+        public void BenchMark()
+        {
+            _cacheService.BenchMark();
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace RedisPOC.Interfaces
         Task<string[]> GetMultipleValuesAsync(List<string> key);
         Task SetValueAsync(string key, string value);
         Task SetMultipleValuesAsync(Dictionary<string, string> keyValuePairs);
+        void BenchMark();
     }
 }
